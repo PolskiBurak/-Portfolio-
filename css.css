@@ -1,0 +1,1237 @@
+
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: url(img/tlo-testv3.png);
+    background-color: #152337;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 100vw;
+}
+:root
+{
+   --zolty: rgba(255, 255, 0, 0.9);
+   --zolty-shadow: rgba(255, 255, 0, 0.5);
+
+}
+
+header
+{
+    width: 100vw;
+    height: 105px;
+    background: url(img/header.png);
+    position: relative;
+    box-shadow: 0 5px 40px 0px #0a101a;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#rozwiniecie ion-icon
+{
+    font-size: 50px;
+    color: yellow;
+    margin: 28px 0 0px 20px;
+    display: none;
+}
+.wlaczone
+{
+    width: 100vw;
+    height: 105px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#navbar
+{
+    width: 580px;
+    height: 6vh;
+    float: left;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;  
+}
+#menu800px
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: none;
+}
+#menu800px a
+{
+    font-size: 50px;
+    color: yellow;
+    list-style-type: none;
+    text-decoration: none;
+    position: absolute;
+    display: none;
+}
+/*----------------------------EROOR-----------------------------------*/
+#FI
+{
+    width: 120px;
+    height: 6vh;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position:absolute;
+    margin-left: 85vw;
+}
+#FI .kolo-nav
+{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+    border: solid 2px yellow;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+}
+#FI .kolo-nav a 
+{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    padding: 8px;
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+#FI #fb:hover
+{
+    border-color: white;
+    background: rgb(0,71,255);
+    background: linear-gradient( 0deg, rgba(0,71,255,0.9962359943977591) 15%, rgba(0,140,255,0.9962359943977591) 43%, rgba(0,166,255,0.9962359943977591 ) 90%);
+}
+#FI #ig:hover
+{
+    border-color: white;
+    background: rgb(255,216,0);
+    background: linear-gradient(30deg, rgba(255,216,0,0.9962359943977591) 4%, rgba(254,153,14,1) 14%, rgba(255,76,222,1) 34%, rgba(194,58,226,1) 55%, rgba(169,101,226,1) 73%, rgba(58,140,213,1) 89% );
+}
+#FI #fb:hover a
+{
+    color: white;
+}
+#FI #ig:hover a
+{
+    color: white;
+}
+#navbar .nav
+{
+    width: 8vw;
+    height: 6vh;
+    float: left;
+    min-width: 150px;
+    min-height: 6vh;
+    margin-left: 15px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 6px;
+}
+#navbar .nav:nth-child(2)
+{
+    margin-left: -10px;
+}
+#navbar .nav:nth-child(3)
+{
+    margin-left: -45px;
+}
+#navbar .nav:nth-child(4)
+{
+    margin-left: -45px;
+}
+#navbar .nav a
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: yellow;
+    font-size: 120%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+#navbar .nav a:hover
+{
+    color: #0A121C;
+    transition: 1s;
+    background: yellow;
+    box-shadow: 0px 0px 10px yellow,
+                    0px 0px 20px rgba(255, 255, 0, 0.9),
+                        0px 0px 30px rgba(255, 255, 0, 0.8),
+                            0px 0px 40px rgba(255, 255, 0, 0.6);
+}   
+span
+{
+    display: block;
+    position: absolute;
+}
+#navbar .nav a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,yellow);
+    animation: animacja-1 1s linear infinite;
+}
+@keyframes animacja-1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+
+}
+#navbar .nav a span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,yellow);
+    animation: animacja-2 1s linear infinite;
+    animation-delay: .25;
+}
+@keyframes animacja-2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+
+}
+#navbar .nav a span:nth-child(3)
+{
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,yellow);
+    animation: animacja-3 1s linear infinite;
+    animation-delay: .50;
+}
+@keyframes animacja-3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+
+}
+#navbar .nav a span:nth-child(4)
+{
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,yellow);
+    animation: animacja-4 1s linear infinite;
+    animation-delay: .75;
+}
+@keyframes animacja-4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+
+}
+#kontener_zawod
+{
+    width: 45vw;
+    height: 50vh;
+    margin-top: 150px;
+    margin-left: 120px;
+    padding-top: 1px;
+    position: relative;
+}
+#zawod
+{
+    width: 45vw;
+    height: 12vh;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+#zawod a
+{
+    color: white;
+    font-size: 290%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 2px;
+    overflow: hidden;
+    letter-spacing: 2px;
+}
+#zawod a span
+{
+    display: block;
+    position: absolute;
+}
+#zawod a span:nth-child(1)
+{
+    left: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,white);
+    animation: zawod 4s linear infinite;
+}
+@keyframes zawod
+{
+    0%
+    {
+       left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+#podzawod
+{
+    width: 45vw;
+    height: 8vh;
+}
+button
+{
+    width: 180px;
+    background:white;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    margin-left:  20px; 
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+}
+button:hover
+{
+    box-shadow:     0px 0px 5px rgba(255, 255, 255, 0.678),
+                    0px 0px 10px rgba(255, 255, 255, 0.678),
+                    0px 0px 15px rgba(255, 255, 255, 0.678),
+                    0px 0px 40px rgba(255, 255, 255, 0.578);
+}
+.text-close
+{
+    position: absolute;
+    text-align: 14px;
+    font-size: 14px;
+    color: white;
+    width: 255px;
+    margin-left: -32px;
+    margin-top: 15px;
+    display: flex;
+    text-shadow: 2px 2px 2px black;
+}
+.text-button
+{
+    display: none;
+}
+.kolo-1
+{
+    width: 50vb;
+    height: 50vh;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: 150px;
+    animation: 3s linear infinite;
+    animation-name: kolo-1;
+}
+.kolo-1 img
+{
+    width: 100%;
+    height: 100%;
+}
+@keyframes kolo-1
+{
+    0%
+    {
+        transform: translate(0, 0px);
+    }
+    25%
+    {
+        transform: translate(15px, -12px);
+    }
+    50%
+    {
+        transform: translate(30px, -27px);
+    }
+    75%
+    {
+        transform: translate(15px, -12px);
+    }
+    100%
+    {
+        transform: translate(0, 0px);
+    }
+}
+.kolo-2
+{
+    width: 27vb;
+    height: 27vh;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 74vw;
+    margin-top: -130px;
+    animation: 3s linear infinite ;
+    animation-name: kolo-2;
+}
+.kolo-2 img
+{
+    width: 100%;
+    height: 100%;
+}
+@keyframes kolo-2
+{
+    0%
+    {
+        transform: translate(0, 0px);
+    }
+    25%
+    {
+        transform: translate(-12px, 20px);
+    }
+    50%
+    {
+        transform: translate(-24px, 40px);
+    }
+    75%
+    {
+        transform: translate(-12px, 20px);
+    }
+    100%
+    {
+        transform: translate(0, 0px);
+    }
+}
+.kolo-3
+{
+    width: 22vb;
+    height: 22vh;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 79vw;
+    margin-top: 380px;
+    animation:  3s linear infinite;
+    animation-name: kolo-3;
+}
+.kolo-3 img
+{
+    width: 100%;
+    height: 100%;
+}
+@keyframes kolo-3
+{
+    0%
+    {
+        transform: translate(0, 0px);
+    }
+    25%
+    {
+        transform: translate(-20px, -10px);
+    }
+    50%
+    {
+        transform: translate(-40px, -20px);
+    }
+    75%
+    {
+        transform: translate(-20px, -10px);
+    }
+    100%
+    {
+        transform: translate(0, 0px);
+    }
+}
+#omnie
+{
+    width: 42vw;
+    height: 64.5vh;
+    background: #0a101a;
+    margin-left: 6%;
+    margin-top: 4.5%;
+    float: left;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+#przestrzen-omnie
+{
+    width: 95%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+    border-left: 1px solid #0a101a;
+    width: 10px;
+    height: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: white;
+        -webkit-box-shadow: 0 0 20px white;
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background: white;
+        -webkit-box-shadow:  0 0 20px white;
+        box-shadow: 0px 0px 20px white;
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+    background: white;
+    } 
+    
+#omnie #przestrzen-omnie a
+{
+    color: white;
+    font-size: 170%;
+}
+#wykres
+{
+    width: 25vw;
+    height: 25vh;
+    float: left;
+    margin-left: 10.5%;
+    margin-top: 25vh;
+    padding-top: 80px;
+    min-height: 300px;
+}
+#wykres a
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+#wykres h1
+{
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+.stats
+{
+    width: 100%;
+    height: 50px;
+}
+.stats .procenty1
+{
+    width: 90%;
+    height: 50px;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    color: #152337;
+}
+.stats .procenty2
+{
+    width: 80%;
+    height: 50px;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+    color: #152337;
+}
+.stats .procenty3
+{
+    width: 30%;
+    height: 50px;
+    background-color: yellow;
+    align-items: center;
+    display: flex;
+}
+#wykres .stats .procenty1 a
+{
+    font-size: 23px;
+    font-weight: 600;
+    color: #152337;
+    margin-left: 18px;
+}
+#wykres .stats .procenty2 a
+{
+    font-size: 23px;
+    font-weight: 600;
+    color: #152337;
+    margin-left: 18px;
+}
+#wykres .stats .procenty3 a
+{
+    font-size: 23px;
+    font-weight: 600;
+    color: #152337;
+    margin-left: 18px;
+}
+/*............................................................*/
+#tlo-kontaktu
+{
+    width: 578px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 16vw;
+    margin-top: 14vh;
+    background-color: #0A121C;
+    border-radius: 4%; 
+    box-shadow: 0px 0px 15px #0A121C;
+    float: left;
+}
+/*............................................................*/
+#przestrzen-kontakt
+{
+    width: 480px;
+    height: 482px;
+    background-color: #0A121C;
+}
+#przestrzen-kontakt .divinput
+{
+    width: 100%;
+    height: 80px;
+    background: none;
+}
+#przestrzen-kontakt .divinput input
+{
+    width: 95%;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    padding-left: 20px;
+    border-bottom:2px solid white; 
+}
+#przestrzen-kontakt .divinput a
+{
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    margin-left: -440px;
+    margin-top: -14px;
+}
+textarea
+{
+    width: 96%;
+    height: 200px;
+    margin-top: 20px;
+    resize: none;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+}
+#tlo-kontaktu #przestrzen-kontakt button
+{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+    position: relative;
+    display: inline-block;
+    padding: 10px 19px;
+    overflow: hidden;
+    background: none;
+    margin-left: 305px;
+    margin-top: 35px;
+}
+ #tlo-kontaktu #przestrzen-kontakt button span
+{
+    display: block;
+    position: absolute; 
+}
+#tlo-kontaktu #przestrzen-kontakt button span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,white);
+    animation: animacja-1 1s linear infinite;
+}
+#tlo-kontaktu #przestrzen-kontakt button span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,white);
+    animation: animacja-2 1s linear infinite;
+    animation-delay: .25;
+}
+#tlo-kontaktu #przestrzen-kontakt button span:nth-child(3)
+{
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,white);
+    animation: animacja-3 1s linear infinite;
+    animation-delay: .50;
+}
+#tlo-kontaktu #przestrzen-kontakt button span:nth-child(4)
+{
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,white);
+    animation: animacja-4 1s linear infinite;
+    animation-delay: .75;
+}
+#tlo-danych
+{
+    width: 450px;
+    height: 195px;
+    background-color: #0a101a;
+    float: left;
+    margin-left: 9vw;
+    margin-top: 54vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #0A121C;
+}
+#przestrzen-danych
+{
+    width: 400px;
+    height: 20px; 
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 50px;;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.info
+{
+    width: 355px;
+    height: 30px;
+    border-bottom: 2px solid white; 
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+#main-prace
+{
+    display: flex;
+    justify-content: center;
+}
+#moje-prace
+{
+    width: 1000px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 302px;
+    text-align: center;
+    justify-content: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+#przestrzen-praca
+{
+    width: 1000px;
+    height: 70vh;
+    text-align: center;
+    justify-content: center;
+    min-width: 302px;
+
+}
+.praca a
+{
+    border: 2px solid black;
+    width: 302px;
+    height: 164.6px;
+    margin-bottom: 20px;
+    float: left;
+    box-shadow: 0px 0px 10px #0a101a;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin-left: 41px;
+}
+#praca-1 a
+{
+    margin-left: 0px;
+}
+.praca a :hover
+{
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.500),
+                0px 0px 20px rgba(255, 255, 255, 0.400),
+                0px 0px 30px rgba(255, 255, 255, 0.300),
+                0px 0px 40px rgba(255, 255, 255, 0.200);
+}
+.praca a img
+{
+    width: 300px;
+    height: 163.6px;
+    position: absolute;
+}
+@media screen and (max-width:1024px) {
+body
+{
+    overflow-y: auto;
+}
+#navbar
+{
+    width: 100%;
+    margin: 0px;
+}
+#kontener_zawod
+{
+    width: 90%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18vh;
+    min-width: none;
+}
+#zawod
+{
+    width: 90%;
+    height: 0px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+#zawod a
+{
+    font-size: 240%;
+    margin-left: 20px;
+}
+button
+{
+    margin-top: 40px;
+    margin-left:10%; 
+}
+.kolo-1
+{
+    width: 35vb;
+    height: 35vh;
+    margin-left: 0;
+    margin-top: 400px;;
+    animation: 3s linear infinite;
+    animation-name: kolo-1;
+}
+.kolo-2
+{
+    width: 22vb;
+    height: 22vh;
+    margin-left: 62vw;
+    margin-top: 220px;
+    animation: 3s linear infinite ;
+    animation-name: kolo-2;
+}
+.kolo-3
+{
+    width: 17vb;
+    height: 17vh;
+    margin-left: 76vw;
+    margin-top: 540px;
+    animation:  3s linear infinite;
+    animation-name: kolo-3;
+}
+#omnie
+{
+    width: 90vw;
+    height: 80.5vh;
+    clear: both;
+    margin-left: 4.5%;
+    margin-top: 4.5%;
+}
+#wykres
+{
+    width: 90vw;
+    height: 65vw;
+    margin-top: 0%;
+    margin-left: 4.5%;
+    padding-top: 80px;
+}
+#wykres h1
+{
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+#wykres a
+{
+    margin-left: 20px;
+}
+.stats
+{
+    margin-left: 20px;
+}
+#moje-prace
+{
+    width: 302px;
+    height: 70vh;
+}
+#przestrzen-praca
+{
+    width: 302px;
+    height: 70vh;
+}
+.praca a
+{
+    margin-left: 0px;
+}
+}
+@media screen and (max-width:1370px) {
+    body
+{
+    overflow-y: auto;
+}
+#navbar
+{
+    width: 100%;
+    margin: 0px;
+}
+    #main-kontakt
+{
+    display: flex;
+    justify-content: center;
+}
+    #tlo-kontaktu
+    {
+        width: 420px;
+        height: 500px;
+        margin-top: 7vh;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #przestrzen-kontakt
+    {
+        width: 382px;
+        height: 382px;
+    }
+    #przestrzen-kontakt .divinput a
+    {
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: -55px;
+    }
+    #przestrzen-kontakt .divinput input
+    {
+        width: 95%;
+        height: 40px;
+    }
+    textarea
+    {
+        width: 95%;
+        height: 160px;
+        margin-top: 10px;
+        margin-left: -2px;
+        font-size: 14px;
+    }
+    #tlo-kontaktu #przestrzen-kontakt button
+    {
+        font-size: 110%;
+        margin-left: 285px;
+        margin-top: 18px;
+        width: 100px;
+    }
+    #tlo-danych
+    {
+        width: 420px;
+        height: 195px;
+        clear: both;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    #przestrzen-danych
+    {
+        width: 400px;
+        height: 20px; 
+        font-weight: 600;
+        font-size: 17px;
+        margin-left: 35px;;
+        margin-top: 15px;
+    }
+    .info
+    {
+        width: 355px;
+        height: 30px;
+        font-size: 13px;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width:800px) {
+    #FI
+    {
+        margin-top: 65px;
+        margin-left: 40px;
+    }
+    #FI .kolo-nav
+    {
+        width: 25px;
+        height: 25px;
+    }
+    #FI .kolo-nav a 
+    {
+        font-size: 15px;
+    }
+    #navbar .nav a
+    {
+        font-size: 100%;
+        padding: 5px 5px;
+
+    }
+    #navbar .nav:nth-child(2)
+    {
+        margin-left: -35px;
+    }
+    #navbar .nav:nth-child(3)
+    {
+        margin-left: -65px;
+    }
+    #navbar .nav:nth-child(4)
+    {   
+        margin-left: -60px;
+    }
+}
+@media screen and (max-width:400px) {
+    #kontener_zawod
+    {
+        min-width: 380px;
+        width: 100vw;
+    }
+    #zawod a
+    {
+      font-size: 180%;  
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .wlaczone
+    {
+        display: none;
+    }
+    header
+    {
+        padding: 1px;
+        display: block;
+    }
+    #rozwiniecie ion-icon
+    {
+        display: flex;
+        cursor: pointer;
+    }
+    .wylaczone
+    {
+        margin-top:27px ;
+        position: relative; z-index: 100;
+        width: 100vw;
+        height: 200px;
+        background: #0D1119;
+    }
+    #navbar
+    {
+        width: 100vh;
+        max-width: 400px;
+        height: 200px;
+        clear: both;
+        justify-content: center;
+        align-items: center;
+        display: grid;  
+        float: none;
+    }
+    #navbar .nav
+    {
+        clear: both;
+        float: none;
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #navbar .nav a
+    {
+        width: 50vw; 
+        margin-right: 10px;
+        height: 35px;
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar .nav:nth-child(2)
+    {
+        margin-left: 0px;
+    }
+    #navbar .nav:nth-child(3)
+    {
+        margin-left: 0px;
+    }
+    #navbar .nav:nth-child(4)
+    {   
+        margin-left: 0px;
+    }
+    #FI
+    {
+        margin-top: -200px;
+        margin-left: 28px;
+        width: 60px;
+        height: 200px;
+        clear: both;
+        float: none;
+        display: block;
+    }
+    #FI .kolo-nav
+    {
+        width: 50px;
+        height: 50px;
+        clear: both;
+        float: none;
+        border: 3px solid yellow;
+        margin-top: 28px;
+    }
+    #FI .kolo-nav a 
+    {
+        font-size: 30px;
+        clear: both;
+        float: none;
+    }
+        #tlo-kontaktu
+        {
+            width: 320px;
+            height: 400px;
+            margin-top: 7vh;
+            clear: both;
+            margin-left: 20px;
+        }
+        #przestrzen-kontakt
+        {
+            width: 320px;
+            height: 230px;
+        }
+        #przestrzen-kontakt .divinput a
+        {
+            font-size: 14px;
+            color: white;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: -50px;
+        }
+        #przestrzen-kontakt .divinput input
+        {
+            width: 298px;
+            height: 30px;
+            margin-top: -30px;
+            position: absolute;
+        }
+        textarea
+        {
+            width: 285px;
+            height: 90px;
+            margin-top: -30px;
+            margin-left: 6px;
+            font-size: 14px;
+        }
+        #tlo-kontaktu #przestrzen-kontakt button
+        {
+            font-size: 14px;
+            margin-left: 220px;
+            margin-top: 18px;
+            width: 75px;
+            padding: 0 0;
+            height: 30px;
+        }
+        #tlo-danych
+        {
+            width: 320px;
+            height: 195px;
+            clear: both;
+            margin-left: 20px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        #przestrzen-danych
+        {
+            width: 320px;
+            height: 20px; 
+            font-weight: 600;
+            font-size: 17px;
+            margin-left: 35px;;
+            margin-top: 15px;
+        }
+        .info
+        {
+            width: 250px;
+            justify-content: right;
+            height: 30px;
+            font-size: 13px;
+        }
+}
+    
